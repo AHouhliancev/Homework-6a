@@ -1,0 +1,39 @@
+li {
+    display: inline;
+    padding-left: 10px;
+}
+
+.first li:not(:first-child):before {
+    content: '|';
+    color: rgb(134, 7, 7);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.first ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: rgb(18, 109, 18);
+}
+
+a:hover {
+    color: rgb(134, 7, 7);
+}
+
+.second li+li {
+    border-left: 2px solid rgb(134, 7, 7);
+    margin-left: 10px;
+}
+
+.third li {
+    border-left: solid 2px rgb(134, 7, 7);
+    margin-left: 10px;
+}
+
+.third li:first-child {
+    border: 0px;
+}
+
